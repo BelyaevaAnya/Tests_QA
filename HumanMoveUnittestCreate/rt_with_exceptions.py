@@ -1,3 +1,5 @@
+import logging
+import traceback
 class Runner:
     def __init__(self, name, speed=5):
         if isinstance(name, str):

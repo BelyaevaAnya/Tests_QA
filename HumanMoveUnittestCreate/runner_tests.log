@@ -1,0 +1,18 @@
+2024-10-03 13:43:23,801 - WARNING - test_run: 25 - Неверный тип данных для объекта Runner
+2024-10-03 13:43:23,802 - WARNING - test_run: 26 - Traceback (most recent call last):
+  File "C:\Users\belae\PycharmProjects\Tests_QA\HumanMoveUnittestCreate\tests_12_4.py", line 22, in test_run
+    beg2 = Runner(2)
+           ^^^^^^^^^
+  File "C:\Users\belae\PycharmProjects\Tests_QA\HumanMoveUnittestCreate\rt_with_exceptions.py", line 8, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+
+2024-10-03 13:43:23,803 - WARNING - test_walk: 17 - Неверная скорость для Runner
+2024-10-03 13:43:23,805 - WARNING - test_walk: 18 - Traceback (most recent call last):
+  File "C:\Users\belae\PycharmProjects\Tests_QA\HumanMoveUnittestCreate\tests_12_4.py", line 14, in test_walk
+    beg1 = Runner("Вася", speed=-3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\belae\PycharmProjects\Tests_QA\HumanMoveUnittestCreate\rt_with_exceptions.py", line 13, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -3
+
